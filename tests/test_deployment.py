@@ -24,6 +24,7 @@ class DeploymentTests(unittest.TestCase):
             "requirements.txt",
             "Dockerfile",
             "render.yaml",
+            "scripts/install_languagetool.py",
         ]
         for relative_path in required:
             self.assertTrue((ROOT / relative_path).is_file(), relative_path)
