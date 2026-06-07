@@ -7,3 +7,5 @@ services:
     envVars:
       - key: PRO_ENGLISH_AI_STORAGE_MODE
         value: session
+      - key: PRO_ENGLISH_AI_WRITING_ENGINE
+        value: fallback

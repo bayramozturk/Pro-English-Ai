@@ -50,7 +50,7 @@ class WritingCoachTests(unittest.TestCase):
     def test_fallback_engine_handles_common_errors(self):
         result = analyze_writing("i dont think we is ready .", checker=None)
 
-        self.assertEqual(result["engine"], "Pro English AI temel çevrimdışı motor")
+        self.assertEqual(result["engine"], "Pro English AI hızlı yazım motoru")
         self.assertEqual(result["corrected_text"], "I don't think we are ready.")
         self.assertGreaterEqual(len(result["issues"]), 4)
 

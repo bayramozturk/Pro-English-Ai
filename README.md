@@ -54,6 +54,8 @@ streamlit run app.py
 The full Writing Coach uses the local LanguageTool 6.5 runtime under
 `.runtime/`. When that runtime is unavailable, Pro English AI continues with its
 lightweight offline correction rules instead of blocking CEFR analysis.
+The Render deployment explicitly uses this low-memory correction mode so the
+model and interface remain responsive on free instances.
 
 ## Deployment
 

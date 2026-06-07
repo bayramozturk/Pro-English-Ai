@@ -233,7 +233,14 @@ def analyze_writing(text, checker="auto"):
             "engine": "unavailable",
         }
 
-    active_checker = get_language_tool() if checker == "auto" else checker
+    engine_mode = os.getenv(
+        "PRO_ENGLISH_AI_WRITING_ENGINE",
+        "auto",
+    ).strip().lower()
+    if checker == "auto" and engine_mode == "fallback":
+        active_checker = None
+    else:
+        active_checker = get_language_tool() if checker == "auto" else checker
     engine = "LanguageTool 6.5"
     try:
         raw_matches = active_checker.check(clean_text) if active_checker else []
@@ -244,7 +251,7 @@ def analyze_writing(text, checker="auto"):
 
     if active_checker is None:
         issues = _fallback_issues(clean_text)
-        engine = "Pro English AI temel çevrimdışı motor"
+        engine = "Pro English AI hızlı yazım motoru"
 
     corrected_text = apply_corrections(clean_text, issues)
     counts = {}

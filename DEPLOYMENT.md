@@ -15,8 +15,8 @@ english.yourdomain.com
 ```
 
 The user opens only your subdomain. Vercel, a second frontend deployment, and
-URL forwarding are not required. Render runs the complete Streamlit
-application, model, assessment, and Writing Coach from the included
+URL forwarding are not required. Render runs the Streamlit application,
+model, assessment, and the low-memory Writing Coach from the included
 `Dockerfile`.
 
 ## Recommended Plan
@@ -129,6 +129,16 @@ PRO_ENGLISH_AI_STORAGE_MODE=session
 Profiles and results stay in the current browser session and are not written
 to a shared SQLite profile. Render's filesystem is temporary, so permanent
 user accounts require an external database in a later production phase.
+
+Render also uses:
+
+```text
+PRO_ENGLISH_AI_WRITING_ENGINE=fallback
+```
+
+This keeps analysis responsive on memory-limited instances by avoiding a
+second Java process. Local development continues to use LanguageTool
+automatically when `.runtime/LanguageTool-6.5` and Java are available.
 
 ## Final Preflight
 
