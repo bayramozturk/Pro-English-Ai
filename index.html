@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pro English AI, İngilizce yazılar için CEFR A1-C2 seviye analizi, Writing Coach ve kişiselleştirilmiş öğrenme planı sunar.">
+  <meta name="theme-color" content="#0d0f12">
+  <title>Pro English AI | English Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0d0f12;
+      --panel: #15191e;
+      --paper: #f5f0e8;
+      --gold: #d2ad52;
+      --teal: #3da08f;
+      --muted: #aaa59c;
+      --line: rgba(245, 240, 232, .1);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--paper);
+      background:
+        radial-gradient(circle at 85% 5%, rgba(61,160,143,.16), transparent 30rem),
+        radial-gradient(circle at 8% 28%, rgba(210,173,82,.12), transparent 34rem),
+        var(--ink);
+      font-family: "DM Sans", sans-serif;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: auto; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--line);
+      background: rgba(13,15,18,.82);
+      backdrop-filter: blur(16px);
+    }
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      font: 600 1.45rem "Playfair Display", serif;
+      letter-spacing: .02em;
+    }
+    .brand em { color: var(--gold); }
+    .nav-links { display: flex; align-items: center; gap: 24px; color: var(--muted); font-size: .88rem; }
+    .nav-links a:hover { color: var(--paper); }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 24px;
+      border: 1px solid rgba(210,173,82,.55);
+      border-radius: 10px;
+      background: linear-gradient(135deg, #d2ad52, #e8c97a);
+      color: #101114;
+      font-weight: 700;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(210,173,82,.2); }
+    .button.secondary { background: transparent; color: var(--paper); border-color: var(--line); }
+    .hero {
+      min-height: 720px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 100px 0 70px;
+    }
+    .eyebrow {
+      color: var(--gold);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 { font-family: "Playfair Display", serif; }
+    h1 {
+      max-width: 880px;
+      margin: 18px auto;
+      font-size: clamp(3.2rem, 8vw, 6.7rem);
+      line-height: .98;
+      letter-spacing: -.04em;
+    }
+    h1 em { color: var(--gold); }
+    .hero-copy {
+      max-width: 720px;
+      margin: 24px auto 34px;
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+    .actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 760px;
+      margin: 64px auto 0;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(245,240,232,.025);
+    }
+    .metric { padding: 24px 16px; border-right: 1px solid var(--line); }
+    .metric:last-child { border: 0; }
+    .metric strong { display: block; color: var(--gold); font: 600 2rem "Playfair Display", serif; }
+    .metric span { color: #817c73; font-size: .72rem; letter-spacing: .1em; }
+    section.content { padding: 86px 0; }
+    .section-head { max-width: 700px; margin-bottom: 34px; }
+    .section-head h2 { margin: 12px 0; font-size: clamp(2.2rem, 5vw, 3.6rem); }
+    .section-head p { color: var(--muted); line-height: 1.7; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card {
+      min-height: 220px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: linear-gradient(145deg, rgba(245,240,232,.055), rgba(245,240,232,.018));
+    }
+    .card-number { color: var(--teal); font-size: .72rem; font-weight: 700; letter-spacing: .14em; }
+    .card h3 { margin: 28px 0 10px; font-size: 1.35rem; }
+    .card p { margin: 0; color: var(--muted); line-height: 1.65; font-size: .9rem; }
+    .levels { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+    .level {
+      padding: 20px 8px;
+      border: 1px solid color-mix(in srgb, var(--level) 55%, transparent);
+      border-radius: 12px;
+      background: color-mix(in srgb, var(--level) 9%, transparent);
+      color: var(--level);
+      text-align: center;
+    }
+    .level strong { display: block; font-size: 1.3rem; }
+    .level span { font-size: .68rem; }
+    .cta {
+      margin: 72px 0;
+      padding: 58px;
+      border: 1px solid rgba(210,173,82,.25);
+      border-radius: 22px;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(210,173,82,.1), rgba(61,160,143,.08));
+    }
+    .cta h2 { margin: 12px 0; font-size: clamp(2rem, 5vw, 3.4rem); }
+    .cta p { max-width: 660px; margin: 0 auto 28px; color: var(--muted); line-height: 1.7; }
+    footer { padding: 28px 0 46px; border-top: 1px solid var(--line); color: #77736c; font-size: .8rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    @media (max-width: 800px) {
+      .nav-links a:not(.button) { display: none; }
+      .grid { grid-template-columns: 1fr; }
+      .levels { grid-template-columns: repeat(3, 1fr); }
+      .metrics { grid-template-columns: 1fr; }
+      .metric { border-right: 0; border-bottom: 1px solid var(--line); }
+      .cta { padding: 36px 22px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#">Pro English <em>AI</em></a>
+      <div class="nav-links">
+        <a href="#features">Özellikler</a>
+        <a href="#levels">CEFR</a>
+        <a class="button" href="https://pro-english-ai.onrender.com" target="_blank" rel="noopener">Uygulamayı Aç</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">AI destekli İngilizce öğrenme platformu</div>
+        <h1>Discover Your <em>True</em> English Level</h1>
+        <p class="hero-copy">
+          İngilizce yazınızı CEFR A1-C2 ölçeğinde analiz edin, hatalarınızın
+          tam konumunu görün ve seviyenize göre kişiselleştirilmiş bir çalışma
+          planı oluşturun.
+        </p>
+        <div class="actions">
+          <a class="button" href="https://pro-english-ai.onrender.com" target="_blank" rel="noopener">Ücretsiz Analizi Başlat</a>
+          <a class="button secondary" href="#features">Nasıl Çalışır?</a>
+        </div>
+        <div class="metrics">
+          <div class="metric"><strong>8.724</strong><span>EĞİTİM ÖRNEĞİ</span></div>
+          <div class="metric"><strong>%77,95</strong><span>KESİN CEFR UYUMU</span></div>
+          <div class="metric"><strong>%98,56</strong><span>±1 SEVİYE UYUMU</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Tek üründe dört öğrenme deneyimi</div>
+          <h2>Sonuçtan daha fazlası</h2>
+          <p>Pro English AI yalnızca bir seviye etiketi üretmez. Kullanıcının neden o seviyede olduğunu açıklar ve bir sonraki adımı planlar.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="card-number">01 · CEFR ENGINE</div>
+            <h3>AI Seviye Analizi</h3>
+            <p>Kelime seçimi, karakter örüntüleri ve metin yapısından A1-C2 tahmini, olası aralık ve güvenilirlik skoru üretir.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">02 · WRITING COACH</div>
+            <h3>Hata Haritası</h3>
+            <p>Yazım, dilbilgisi ve noktalama sorunlarını satır-sütun konumlarıyla gösterir; düzeltilmiş metni yeniden oluşturur.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">03 · ASSESSMENT</div>
+            <h3>36 Soruluk Test</h3>
+            <p>Dilbilgisi, kelime ve okuma becerilerini A1-C2 boyunca ölçer; güçlü ve geliştirilmesi gereken alanları açıklar.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">04 · LEARNING OS</div>
+            <h3>Haftalık Plan</h3>
+            <p>Analiz ve test sonucundan ölçülebilir pratik görevleri üretir, ilerlemeyi mevcut oturumda takip eder.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">05 · TRANSPARENCY</div>
+            <h3>Açıklanabilir Sonuç</h3>
+            <p>Kelime çeşitliliği, ortalama cümle uzunluğu, karmaşık kelime oranı ve girdi kalitesini görünür kılar.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">06 · PRIVACY</div>
+            <h3>Güvenli Demo Modu</h3>
+            <p>Yayınlanan demo varsayılan olarak oturumluk çalışır; kullanıcı metinleri ortak bir sunucu profiline kaydedilmez.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="levels">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Common European Framework of Reference</div>
+          <h2>A1'den C2'ye tam kapsam</h2>
+        </div>
+        <div class="levels">
+          <div class="level" style="--level:#c95c54"><strong>A1</strong><span>Beginner</span></div>
+          <div class="level" style="--level:#dc8b43"><strong>A2</strong><span>Elementary</span></div>
+          <div class="level" style="--level:#52a66b"><strong>B1</strong><span>Intermediate</span></div>
+          <div class="level" style="--level:#4c8fc7"><strong>B2</strong><span>Upper Intermediate</span></div>
+          <div class="level" style="--level:#9469b8"><strong>C1</strong><span>Advanced</span></div>
+          <div class="level" style="--level:#3da08f"><strong>C2</strong><span>Proficient</span></div>
+        </div>
+
+        <div class="cta">
+          <div class="eyebrow">Yazınızı daha iyi anlayın</div>
+          <h2>Pro English AI deneyimini başlatın</h2>
+          <p>En güvenilir sonuç için doğal biçimde yazılmış 50-150 kelimelik bir İngilizce metin kullanın.</p>
+          <a class="button" href="https://pro-english-ai.onrender.com" target="_blank" rel="noopener">Uygulamaya Git</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>Pro English AI · 2026</span>
+      <span>AI destekli tahmindir; resmi dil sertifikası değildir.</span>
+    </div>
+  </footer>
+</body>
+</html>

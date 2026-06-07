@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+.env
+.venv/
+venv/
+.tmp_*/
+.runtime/
+app_data/
+*.pdf
+vectorizer.pkl
+test_panel.py

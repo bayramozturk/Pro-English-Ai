@@ -1,0 +1,14 @@
+.git
+.runtime
+.venv
+venv
+__pycache__
+*.pyc
+.pytest_cache
+app_data
+datasets
+*.pdf
+data.csv
+train.py
+test_panel.py
+vectorizer.pkl

@@ -1,0 +1,68 @@
+{
+  "training_samples": 8724,
+  "independent_test_samples": 1460,
+  "independent_test_accuracy": 0.7795,
+  "within_one_level_accuracy": 0.9856,
+  "mean_absolute_error": 0.4988,
+  "confusion_matrix": [
+    [
+      4,
+      78,
+      21,
+      2,
+      0,
+      0
+    ],
+    [
+      1,
+      46,
+      42,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      175,
+      503,
+      182,
+      3,
+      0
+    ],
+    [
+      0,
+      3,
+      32,
+      93,
+      14,
+      0
+    ],
+    [
+      0,
+      0,
+      26,
+      149,
+      72,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      4,
+      5,
+      0
+    ]
+  ],
+  "levels": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1",
+    "C2"
+  ],
+  "dataset": "CEFR-SP (Wiki-Auto + SCoRE) and project data",
+  "evaluation_protocol": "Official independent test split; prediction agrees with either expert label",
+  "trained_at": "2026-06-07T16:31:51.436013+00:00"
+}

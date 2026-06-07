@@ -1,0 +1,181 @@
+text,label
+"I like bananas.",A1
+"My sister is at home.",A1
+"The dog is very small.",A1
+"I drink coffee every morning.",A1
+"The table is brown.",A1
+"I have a green bag.",A1
+"The teacher is kind.",A1
+"I read a short book.",A1
+"My friend likes music.",A1
+"The car is very fast.",A1
+"I walk to school.",A1
+"My brother has a bike.",A1
+"I see a white bird.",A1
+"The room is clean.",A1
+"I eat rice for lunch.",A1
+"The child is laughing.",A1
+"I like this song.",A1
+"The apple is sweet.",A1
+"I watch TV at night.",A1
+"My cat is sleeping.",A1
+"I usually drink tea in the morning.",A2
+"We visited our cousins last weekend.",A2
+"I lost my phone yesterday.",A2
+"She bought a new dress.",A2
+"They are waiting for the bus.",A2
+"I am learning to drive.",A2
+"We watched an interesting documentary.",A2
+"I forgot to bring my notebook.",A2
+"She invited me to her birthday party.",A2
+"The train arrived late.",A2
+"I met him two years ago.",A2
+"We stayed in a small hotel.",A2
+"I want to learn Spanish.",A2
+"He repaired his bicycle.",A2
+"I wrote a letter to my friend.",A2
+"She cooked dinner for everyone.",A2
+"I cleaned my room this morning.",A2
+"They played chess all afternoon.",A2
+"I listened to music while studying.",A2
+"The weather became colder.",A2
+"I have been studying English for two years.",B1
+"If you call her, she will help you.",B1
+"I was watching TV when the lights went out.",B1
+"They have already finished the assignment.",B1
+"I believe this plan will work.",B1
+"She told me that she was busy.",B1
+"We decided to travel together.",B1
+"I have never tried sushi before.",B1
+"He was running when he slipped.",B1
+"I will call you when I arrive.",B1
+"We are thinking about moving next year.",B1
+"I didn't realize the problem at first.",B1
+"They have been waiting for the results.",B1
+"I used to live in a big city.",B1
+"If you need help, just ask.",B1
+"I was surprised to see him there.",B1
+"We managed to solve the problem.",B1
+"I am considering changing my job.",B1
+"She apologized for being late.",B1
+"I felt nervous before the exam.",B1
+"Although the project was difficult, we completed it successfully.",B2
+"The manager explained the situation very clearly.",B2
+"Despite the long journey, we enjoyed the trip.",B2
+"The new policy aims to improve working conditions.",B2
+"I would recommend this book to anyone interested in history.",B2
+"The company plans to expand its services internationally.",B2
+"We need to analyze the data carefully.",B2
+"The presentation was both informative and engaging.",B2
+"They discussed several possible solutions.",B2
+"She demonstrated excellent leadership skills.",B2
+"In addition, the study provides valuable insights.",B2
+"The results indicate a clear improvement.",B2
+"The organization focuses on community development.",B2
+"The meeting lasted longer than expected.",B2
+"Researchers are investigating new medical treatments.",B2
+"The experiment produced unexpected results.",B2
+"The report outlines the main challenges.",B2
+"The team collaborated effectively.",B2
+"We should evaluate all available options.",B2
+"The proposal was accepted unanimously.",B2
+"The rapid advancement of technology continues to reshape modern society.",C1
+"Researchers emphasize the importance of interdisciplinary collaboration.",C1
+"The debate surrounding artificial intelligence remains highly complex.",C1
+"The study provides compelling evidence supporting the theory.",C1
+"Education plays a crucial role in economic development.",C1
+"The author critically examines social inequalities.",C1
+"The policy aims to reduce environmental damage.",C1
+"The findings reveal significant behavioral patterns.",C1
+"The project requires careful strategic planning.",C1
+"The theory challenges traditional perspectives.",C1
+"The conference gathered experts from various disciplines.",C1
+"The government introduced reforms to stabilize the economy.",C1
+"The innovation has transformed the industry.",C1
+"The analysis highlights underlying structural issues.",C1
+"The results contribute to ongoing academic discussions.",C1
+"The initiative encourages sustainable development.",C1
+"The research explores cognitive processes.",C1
+"The scholar presented a thought-provoking argument.",C1
+"The study investigates linguistic variation.",C1
+"The findings have important practical implications.",C1
+"The philosophical discourse challenges conventional assumptions.",C2
+"A comprehensive examination revealed numerous inconsistencies.",C2
+"The theoretical framework offers a sophisticated interpretation.",C2
+"The intricate dynamics of global politics are difficult to predict.",C2
+"The narrative structure reflects profound psychological depth.",C2
+"The hypothesis provoked considerable academic debate.",C2
+"The research demonstrates remarkable methodological rigor.",C2
+"The complexity of the issue demands nuanced analysis.",C2
+"The author articulates a compelling critique of modern capitalism.",C2
+"The discourse integrates multiple philosophical traditions.",C2
+"The implications extend far beyond the original scope of the study.",C2
+"The historical context provides essential insight.",C2
+"The scholar meticulously evaluated the primary sources.",C2
+"The theoretical implications remain controversial.",C2
+"The analysis reveals subtle ideological influences.",C2
+"The argument challenges deeply rooted assumptions.",C2
+"The phenomenon illustrates the paradox of progress.",C2
+"The intellectual debate continues to evolve.",C2
+"The conceptual framework integrates diverse perspectives.",C2
+"The profound implications of the discovery transformed the field.",C2
+"I like to draw pictures.",A1
+"The boy has a blue hat.",A1
+"I see a yellow flower.",A1
+"The dog runs fast.",A1
+"My house is near the park.",A1
+"I read a story.",A1
+"The girl is smiling.",A1
+"My bag is heavy.",A1
+"I like cold water.",A1
+"The sun is bright.",A1
+"We watched a movie together.",A2
+"I bought some fruit at the market.",A2
+"She helped me with my homework.",A2
+"They visited the museum.",A2
+"I learned a new word today.",A2
+"We walked along the beach.",A2
+"I practiced the guitar yesterday.",A2
+"He borrowed my book.",A2
+"I prepared dinner for my family.",A2
+"They traveled by train.",A2
+"I have been reading this book for weeks.",B1
+"We were talking when the teacher arrived.",B1
+"I believe this solution is better.",B1
+"They have visited many countries.",B1
+"I am planning to start a business.",B1
+"She admitted that she was wrong.",B1
+"We managed to finish early.",B1
+"I will explain everything tomorrow.",B1
+"He promised to help me.",B1
+"I was feeling tired after work.",B1
+"The strategy proved highly effective.",B2
+"The committee reviewed the proposal.",B2
+"The program aims to support students.",B2
+"The system improves overall efficiency.",B2
+"The discussion covered several topics.",B2
+"The policy encourages innovation.",B2
+"The analysis identifies key factors.",B2
+"The initiative received strong support.",B2
+"The solution addresses the problem.",B2
+"The study confirms previous findings.",B2
+"The research contributes to theoretical development.",C1
+"The proposal sparked international debate.",C1
+"The framework supports long-term sustainability.",C1
+"The argument reflects sophisticated reasoning.",C1
+"The concept challenges existing models.",C1
+"The methodology ensures accurate results.",C1
+"The analysis reveals emerging patterns.",C1
+"The initiative promotes global cooperation.",C1
+"The policy strengthens institutional structures.",C1
+"The findings enrich academic literature.",C1
+"The philosophical inquiry explores the nature of consciousness.",C2
+"The intricate argumentation demands careful interpretation.",C2
+"The discourse reflects profound intellectual tradition.",C2
+"The analysis synthesizes complex theoretical ideas.",C2
+"The interpretation offers remarkable insight.",C2
+"The scholar proposes an innovative perspective.",C2
+"The narrative evokes deep existential reflection.",C2
+"The complexity of the phenomenon defies simple explanation.",C2
+"The conceptual analysis expands theoretical boundaries.",C2
+"The profound investigation reshapes contemporary thought.",C2
